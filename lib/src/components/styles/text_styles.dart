@@ -6,6 +6,11 @@ TextStyle style30white =
 
 TextStyle style23white =
     TextStyle(fontSize: 23, fontWeight: FontWeight.w600, color: whiteColor);
+TextStyle style23whiteNotbold =
+    TextStyle(fontSize: 20, fontWeight: FontWeight.w400, color: whiteColor);
+
+TextStyle style25whitebold =
+    TextStyle(fontSize: 25, fontWeight: FontWeight.w600, color: whiteColor);
 
 TextStyle style18white =
     TextStyle(fontSize: 18, fontWeight: FontWeight.w400, color: whiteColor);

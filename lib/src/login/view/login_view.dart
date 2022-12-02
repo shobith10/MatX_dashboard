@@ -3,6 +3,7 @@ import 'package:dashboard_application/src/components/styles/colors.dart';
 import 'package:dashboard_application/src/components/styles/text_styles.dart';
 import 'package:dashboard_application/src/components/textfields/login_textfield.dart';
 import 'package:dashboard_application/src/components/widgets/sized.dart';
+import 'package:dashboard_application/src/dashboard/view/dashboard_view.dart';
 import 'package:dashboard_application/src/login/login_controller.dart';
 import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/material.dart';
@@ -204,17 +205,23 @@ class LoginView extends StatelessWidget {
                           ],
                         ),
                         sizedBoxh15,
-                        Container(
-                            padding: const EdgeInsets.symmetric(
-                                horizontal: 20, vertical: 10),
-                            decoration: BoxDecoration(
-                                color: primaryLite,
-                                borderRadius: borderRadius10),
-                            child: Text(
-                              'Login',
-                              style:
-                                  style15greyLite.copyWith(color: whiteColor),
-                            )),
+                        InkWell(
+                          onTap: () {
+                            Navigator.pushNamed(
+                                context, DashBoardView.routeName);
+                          },
+                          child: Container(
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 20, vertical: 10),
+                              decoration: BoxDecoration(
+                                  color: primaryLite,
+                                  borderRadius: borderRadius10),
+                              child: Text(
+                                'Login',
+                                style:
+                                    style15greyLite.copyWith(color: whiteColor),
+                              )),
+                        ),
                         sizedBoxh15,
                         Row(
                           children: [

@@ -24,7 +24,7 @@ class LoginView extends StatelessWidget {
           alignment: WrapAlignment.center,
           children: [
             Container(
-              width: 350,
+              width: width < 350 ? 320 : 350,
               height: width > 790 ? 370 : 280,
               padding: const EdgeInsets.all(20),
               decoration: BoxDecoration(
@@ -70,7 +70,7 @@ class LoginView extends StatelessWidget {
               ),
             ),
             Container(
-              width: 350,
+              width: width < 350 ? 320 : 350,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(
                       topLeft: const Radius.circular(0),

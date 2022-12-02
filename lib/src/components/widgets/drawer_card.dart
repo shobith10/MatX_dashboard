@@ -36,7 +36,7 @@ class DrawerCard extends StatelessWidget {
           ),
           Text(
             title ?? '',
-            style: style23whiteNotbold,
+            style: style20whiteNotbold,
           ),
           const Spacer(),
           isArrow ?? false
